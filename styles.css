@@ -1,1 +1,80 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+}
+
+header{
+  width: 100vw;
+  height: 80px;
+  display: flex;
+  background-color: rgb(213, 228, 241);
+  position: relative;
+}
+
+header h1{
+  font-size: 2em;
+}
+
+.header-items-wrapper{
+  min-width: 100px;
+  width: 1200px;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+}
+
+
+.header-nav-items{
+  max-width: 650px;
+  width: 550px;
+}
+
+.nav-links{
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links li a{
+  text-decoration: none;
+  color: black;
+  transition: .2s;
+}
+
+.nav-links li a:hover{
+  text-decoration: underline;
+  color: olivedrab;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-search-button{
+  padding: 5px 30px;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  background-color: chocolate;
+  cursor: pointer;
+}
+
+@media (max-width:945px) {
+  .header-nav-items{
+    display: none;
+  }
+  header h1{
+    font-size: 1.2em;
+  }
+}
+
+@media (min-width:400px){
+  
+}
