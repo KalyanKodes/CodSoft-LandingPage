@@ -12,7 +12,16 @@ header{
   height: 80px;
   display: flex;
   background-color: rgb(213, 228, 241);
-  position: relative;
+  position: fixed;
+  top: 0;
+}
+
+.fa-bars{
+  position: absolute;
+  left: 5px;
+  cursor: pointer;
+  font-size: 0em;
+  margin-right: 5px;
 }
 
 header h1{
@@ -27,7 +36,7 @@ header h1{
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 10px;
+  padding: 20px;
 }
 
 
@@ -36,12 +45,23 @@ header h1{
   width: 550px;
 }
 
+
+.fa-circle-xmark{
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  color: #FFF;
+  cursor: pointer;
+  font-size: 0em;
+}
 .nav-links{
   display: flex;
   list-style: none;
   justify-content: space-between;
   align-items: center;
 }
+
+
 
 .nav-links li a{
   text-decoration: none;
@@ -66,12 +86,40 @@ header h1{
   cursor: pointer;
 }
 
+
+.header-nav-items.show{
+  left: 0;
+  transition: .3s;
+}
+
 @media (max-width:945px) {
   .header-nav-items{
-    display: none;
+    position: absolute;
+    height: 100vh;
+    width: 70vw;
+    left: -100%;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.84);
+  }
+  .fa-circle-xmark{
+    font-size: 2em;
+  }
+  .nav-links{
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  .nav-links li a{
+    color: #FFF;
+  }
+  .fa-bars{
+    font-size: 1.1em;
   }
   header h1{
-    font-size: 1.2em;
+    font-size: 1.1em;
   }
 }
 
