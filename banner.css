@@ -1,0 +1,112 @@
+/* Importing Google Font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+/* Global CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+}
+
+
+
+
+main{
+    /* width: 100%; */
+    background-color: yellow;
+}
+
+
+.banner-article{
+    min-width: 100%;
+    height: 700px;
+    background: url(./Assests/banner-bg.jpg) no-repeat center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    padding-left: 200px;
+    position: relative;
+}
+
+.banner-article::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.63);
+    
+}
+
+
+.banner-article section{
+    max-width: 700px;
+    margin: 10px;
+    /* width: 700px; */
+    height: auto;
+    /* background-color: yellow; */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: #FFF;
+    z-index: 2;
+    font-size: 1.1em;
+
+}
+.banner-article section div button{
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    color: #FFF;
+}
+
+
+.banner-article section div :nth-child(2){
+    margin-left: 10px;
+    background-color: unset;
+    border: 1px solid #FFF;
+}
+.banner-article section div :nth-child(1){
+    background-color: rgba(115, 115, 219, 0.61);
+}
+
+.services-article {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 30px;
+    background-image: linear-gradient(to right , #FBAA65 , #F28483 , #E65BA5);
+}
+
+.services-article section{
+    max-width: 350px;
+    width: 350px;
+    height: 150px;
+    padding: 10px;
+    background-color: rgba(19, 5, 5, 0.075);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    align-items: start;
+    color: #FFF;
+}
+
+.services-article section div{
+    display: flex;
+    gap: 10px;
+}
+
+
+@media (max-width: 950px){
+    .banner-article{
+        padding-left: 10px;
+    }
+}

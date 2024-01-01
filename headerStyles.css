@@ -15,8 +15,6 @@ header{
     height: 80px;
     display: flex;
     background-color: rgb(213, 228, 241);
-    position: fixed;
-    top: 0;
 }
 
 .fa-bars{
@@ -45,7 +43,8 @@ header h1{
 .header-nav-items{
     max-width: 650px;
     width: 550px;
-    transition: .1s;
+    /* transition: .1s; */
+    z-index: 3;
 }
 
 .fa-circle-xmark{
