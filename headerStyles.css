@@ -1,128 +1,125 @@
+/* Importing Google Font */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
+/* Global CSS Reset */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins";
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
 }
 
+/* Header Styles */
 header{
-  width: 100vw;
-  height: 80px;
-  display: flex;
-  background-color: rgb(213, 228, 241);
-  position: fixed;
-  top: 0;
+    width: 100vw;
+    height: 80px;
+    display: flex;
+    background-color: rgb(213, 228, 241);
+    position: fixed;
+    top: 0;
 }
 
 .fa-bars{
-  position: absolute;
-  left: 5px;
-  cursor: pointer;
-  font-size: 0em;
-  margin-right: 5px;
+    position: absolute;
+    left: 5px;
+    cursor: pointer;
+    font-size: 0em;
+    margin-right: 5px;
 }
 
 header h1{
-  font-size: 2em;
+    font-size: 2em;
 }
 
 .header-items-wrapper{
-  min-width: 100px;
-  width: 1200px;
-  height: 100%;
-  margin: auto;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding: 20px;
+    min-width: 100px;
+    width: 1200px;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
 }
-
 
 .header-nav-items{
-  max-width: 650px;
-  width: 550px;
+    max-width: 650px;
+    width: 550px;
+    transition: .1s;
 }
-
 
 .fa-circle-xmark{
-  position: absolute;
-  right: 20px;
-  top: 20px;
-  color: #FFF;
-  cursor: pointer;
-  font-size: 0em;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    color: #FFF;
+    cursor: pointer;
+    font-size: 0em;
 }
+
 .nav-links{
-  display: flex;
-  list-style: none;
-  justify-content: space-between;
-  align-items: center;
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
 }
-
-
 
 .nav-links li a{
-  text-decoration: none;
-  color: black;
-  transition: .2s;
+    text-decoration: none;
+    color: black;
+    transition: .2s;
 }
 
 .nav-links li a:hover{
-  text-decoration: underline;
-  color: olivedrab;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    text-decoration: underline;
+    color: olivedrab;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .header-search-button{
-  padding: 5px 30px;
-  border: none;
-  outline: none;
-  border-radius: 40px;
-  background-color: chocolate;
-  cursor: pointer;
+    padding: 5px 30px;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    background-color: chocolate;
+    cursor: pointer;
 }
-
 
 .header-nav-items.show{
-  left: 0;
-  transition: .3s;
+    left: 0;
+    transition: .1s;
 }
 
+/* Media query for responsive design */
 @media (max-width:945px) {
-  .header-nav-items{
-    position: absolute;
-    height: 100vh;
-    width: 70vw;
-    left: -100%;
-    top: 0;
-    background-color: rgba(0, 0, 0, 0.84);
-  }
-  .fa-circle-xmark{
-    font-size: 2em;
-  }
-  .nav-links{
-    width: 100%;
-    height: 100%;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-  }
-  .nav-links li a{
-    color: #FFF;
-  }
-  .fa-bars{
-    font-size: 1.1em;
-  }
-  header h1{
-    font-size: 1.1em;
-  }
-}
-
-@media (min-width:400px){
-  
+    .header-nav-items{
+        position: absolute;
+        height: 100vh;
+        width: 70vw;
+        left: -100%;
+        top: 0;
+        background-color: rgba(0, 0, 0, 0.84);
+    }
+    .fa-circle-xmark{
+        font-size: 2em;
+    }
+    .nav-links{
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+    .nav-links li a{
+        color: #FFF;
+    }
+    .fa-bars{
+        font-size: 1.1em;
+    }
+    header h1{
+        font-size: 1.1em;
+    }
 }
