@@ -14,7 +14,8 @@
 
 main{
     /* width: 100%; */
-    background-color: yellow;
+    /* overflow: hidden; */
+    /* background-color: yellow; */
 }
 
 
@@ -55,7 +56,7 @@ main{
     font-size: 1.1em;
 
 }
-.banner-article section div button{
+.banner-article section div button , .aboutus-article :nth-child(1) button{
     padding: 10px;
     cursor: pointer;
     border-radius: 20px;
@@ -70,8 +71,9 @@ main{
     background-color: unset;
     border: 1px solid #FFF;
 }
-.banner-article section div :nth-child(1){
-    background-color: rgba(115, 115, 219, 0.61);
+.banner-article section div :nth-child(1) , .aboutus-article :nth-child(1) button{
+    /* background-color: rgba(115, 115, 219, 0.61); */
+    background-image: linear-gradient(to right , #FBAA65 , #F28483 , #E65BA5);
 }
 
 .services-article {

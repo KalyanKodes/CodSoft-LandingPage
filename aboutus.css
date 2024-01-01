@@ -1,0 +1,45 @@
+/* Importing Google Font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+/* Global CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+}
+body{
+
+    overflow-x: hidden;
+}
+
+
+.aboutus-article{
+    margin: 30px 0;
+    /* width: 100%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    flex-wrap: wrap-reverse;
+}
+
+.aboutus-article :nth-child(1){
+    min-width: 200px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    font-size: 1em;
+    gap: 10px;
+}
+
+.aboutus-article :nth-child(2) div{
+    width: 400px;
+    height: 300px;
+    background: url(./Assests/serious-man-thinking_1149-1328.avif) no-repeat;
+    background-size: cover;
+    background-position: top;
+    border-left: 2px solid yellow;
+}
+
